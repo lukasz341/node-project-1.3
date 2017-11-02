@@ -15,7 +15,7 @@ process.stdin.on('readable', function() {
                 console.log(process.env.LANG);// język systemowy użytkownika
                 break;
             default:
-                process.stdout.write('Wrong instruction!\n');
+                process.stderr.write('Wrong instruction!\n');
         };
     }
 });
